@@ -99,6 +99,11 @@ module Awscr::S3
         handle_response!(resp)
         yield resp
       end
+    rescue error : ServerError
+      raise error
+    rescue error
+      @http.close
+      raise error
     end
 
     # :nodoc:
