@@ -10,8 +10,8 @@ license: MIT
 
 dependencies:
   awscr-signer:
-    github: taylorfinnell/awscr-signer
-    version: ~> 0.8.0
+    github: repomaa/awscr-signer
+    branch: master
 
 development_dependencies:
   timecop:
